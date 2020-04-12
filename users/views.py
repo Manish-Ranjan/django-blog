@@ -10,8 +10,9 @@ def register(request, *args, **kwargs):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'Account Created for {username}!')
-            return redirect('blog-home')
+            messages.success(
+                request, f'Your account has been created! you are now Login')
+            return redirect('login')
     else:
         form = UserRegistrationForm()
 
