@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'phone_field',
     'crispy_forms',
     'users.apps.UsersConfig',
     'blog.apps.BlogConfig',
@@ -60,6 +61,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, "blog", "templates"),
             os.path.join(BASE_DIR, "blog",  "static"),
+
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -124,6 +126,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+MEDIA_URL = '/media/'
+PHONENUMBER_DEFAULT_REGION = 'US'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = "blog-home"
+LOGIN_URL = 'login'
