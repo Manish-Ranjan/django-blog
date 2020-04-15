@@ -1,0 +1,74 @@
+[{
+        "title": "Top 5 Programming Lanaguages",
+        "content": " 1. Python. Python is one of the most commonly used programming languages today and is an easy language for beginners to learn because of its readability.\n 2. Java.\n 3. JavaScript and TypeScript. \n 4. Swift \n 5. C# ",
+        "user_id": 1
+    },
+    {
+        "title": "Can Python handle complex numbers?",
+        "content": "Not only real numbers, Python can also handle complex numbers and its associated functions using the file “cmath”. Complex numbers have their uses in many applications related to mathematics and python provides useful tools to handle and manipulate them. \n Converting real numbers to complex number \n An complex number is represented by “ x + yi “. Python converts the real numbers x and y into complex using the function complex(x,y). The real part can be accessed using the function real() and imaginary part can be represented by imag().",
+        "user_id": 1
+
+    },
+    {
+        "title": "Why use Python dictionaries?",
+        "content": "Dictionaries in Python are a well designed version of a very common data structure called a hash map.\n A list or array lets you access your data by a single number - the index into the array/list - which is ok if your key value is an integer and you use a continuous set of integers from zero. Once you start missing numbers, you will be wasting space, and if you need to access your data by something else (say a name, or a date) then finding the data becomes time consuming - as you have to search every data item in your array.\n \n The dictionary solves both of these problems - the ‘index’ (more correctly called the key) can be any item of data you want (including a name, a date, a pair of integers), finding data based on the key is really quickly (regardless of the type of key used); a dictionary doesn’t waste space for keys that don’t exist; and you can use different types of key in the same dictionary.\n Also the performance of a dictionary is very good compared to a simple list; inserting data into a dictionary is quick regardless of the data being inserted (whereas inserting data into a list requires you to move half the list on average); similarly deleting an item from a dictionary is more efficient; and we have already explored the fact that finding data will be a lot quicker.\n Python uses dictionaries all over the place - the variables and functions in a module - stored in a dictionary; The local variables in a function - stored in a dictionary; The implementation of a function - a dictionary; a class is a dictionary; an instance of a class is another dictionary; the modules your program has imported - you guessed it - another dictionary. Even Python set objects are implemented as modified dictionaries.\n To paraphrase Tim Peter’s ‘Zen of Python’ : “dictionaries are great - let’s do more of them”.",
+        "user_id": 1
+    },
+    {
+        "title": "Why is there a maximum recursion depth in Python?",
+        "content": "TLDR: The Recursion limit is there in Python to ensure that infinite recursion is caught by a nice Python exception, rather than segmentation fault crash.\n Recursion (which isn’t optimised away) uses a stack frame for each level of call.\n In other languages if you recurse too much you can generate a memory collision, based on the memory within your application and the stack allocated to it. \n In C - a simple recursive application fails with a segmentation fault after 261701 calls. \n The Python developers decided that they would prefer to have a nice (and catchable) Python exception, rather than a deeper Memory Seg fault from somewhere in the Python virtual machine. It is also the fact that Python stack frames are larger than those in a ‘comparable’ C program.\n The default for Python seems to be around 1000 recursive calls, it can be modified with caution if you have a need for deeper recursion.",
+        "user_id": 1
+    },
+    {
+        "title": "Are there any plans for a Python 4?",
+        "content": "There are a number of PEPs that mention things being removed from PYthon4, which are already deprecated in some version of Python3 but crucially :\n 1. There are plans for Python 3.9 (ie outline dates, but no PEPs currently approved for inclusion) - 2020 delivery. \n 2. There are tentative dates for Python 3.10 late 2020, early 2021 - that is three dot ten\n 3. I have seen the possibility of 3.11 & 3.12 mentioned \n 4. There are no outline or tentative dates for Python 4 \n \n In common with most software Python uses semantic version numbering - that means 3.9 isn't automatically the last release of Version 3, it means that 3.9 is simply the 9th release of Version 3 - ie it is <Major Version>.<Minor Version> \n An example is the Django framework - the Version 1 releases went to 1.11 (one dot eleven) and 1.12 (one dot twelve) \n New features increment the minor Version eg: 3.6 -> 3.7. -> 3.8 \n Major changes would increase the Major Version number, so If the community decides that there is a PEP which when implemented profoundly changes the language or the implementation, that is the point where a move to Version 4 will be made.\n In the case of Python it could be that Version 4 could bring a whole new opcode set (which will break some Python 3 scripts that create or inspects opcodes); or remove the GIL; or change the CAPI; or change the AST - all of these are significant internal changes which will allow the vast majority of Python scripts to keep working but will break some scripts that delve into the internals. \n It is entirely possible that we could get to Python 3.15 or higher before there is a big enough change to warrant moving to Python 4.0\n ",
+        "user_id": 1
+    },
+    {
+        "title": "What does . Operator Means in python?",
+        "content": "The . (dot) operator in python is used to access a named attribute from a known object.\n As an example :\n michael = Person('Michael Palin')\n print( michael.dob)\n \n michael is a instance of a Person object - what that object is and how it is defined doesn’t matter for this example.\n In line 2, michael.dob is accessing the dob attribute from the michael object: again how that attribute is defined doesn’t matter for this example.\n To be clear the syntax is : <object>.<attribute>[.<attribute>]\n ",
+        "user_id": 1
+    },
+    {
+        "title": "How do I learn mathematics for machine learning?",
+        "content": "Machine Learning shows a significant demand for productive business domains such as:\n Data Mining\nData Science\n Artificial Intelligence\n and mathematics is a substance for machine learning.\n First and foremost before learning math, you should be interested in math.\n It mainly includes statistics, linear algebra, probability, multivariable calculus:\n",
+        "user_id": 1
+    },
+    {
+        "title": "What does ‘Matplotlib Pyplot’ do?",
+        "content": "Matplotlib is the library in Python which is used for visualization of 2 Dimensional plots. So basically, we can generate bar graphs , Scatter plots, histograms, etc. As the name suggests, this library works like MATLAB.\n\n Matplotlib pyplot has different commands which help us to get more detailed plot. We can give title , xlabel , ylabel. We can even control the line properties like line width. Interesting fact is that we can even work with multiple plots using matplotlib.\n In short, We use Matplotlib pyplot to plot 2 dimensional visualizations where the library works like MATLAB. We can control different properties of that plot and that's something really cool.\n",
+        "user_id": 2
+    },
+    {
+        "title": "Can Python handle complex numbers?",
+        "content": "Not only real numbers, Python can also handle complex numbers and its associated functions using the file “cmath”. Complex numbers have their uses in many applications related to mathematics and python provides useful tools to handle and manipulate them. Converting real numbers to complex number An complex number is represented by “ x + yi “. Python converts the real numbers x and y into complex using the function complex(x,y). The real part can be accessed using the function real() and imaginary part can be represented by imag().",
+        "user_id": 2
+
+    },
+    {
+        "title": "Which python is best for learning in today's technological world? Why not Java?",
+        "content": "1: Python is a easy and simple language to learn which help the programmer to write their code easily and efficiently.\n 2: Python is the only language which can be used for Machine learning & Artificial Intelligence which is growing popular day by day due to it’s importance.\n 3: If you are fresher in programming than python is best to learn as your first programming language than java as it easy and open source.\n 4: As i had wrote earlier that python is an open source platform which means that you can write the same code on other platform without changing a syntax which is most beneficial for programmers.\n 5: Data Science & Data Analytics are the most growing field in industry which used python as their primary language than java\n",
+        "user_id": 2
+    },
+    {
+        "title": "What are some of the most basic things every programmer should know?",
+        "content": "Here’s a quick list off the top of my head…\n 1. Bad architecture causes more problems than bad code.\n 2. You will spend more time thinking than coding.\n 3. The best opportunity to get paid more is when you're negotiating salary before getting hired.\n 4. People skills determine your success more than technical skills.\n 5. Users will find impressive and bizarre ways to solve their own problems.\n 6. Commit code more often.\n 7. Always work in feature branches.\n 8. Basic UNIX skills are helpful, but not required.\n 9. Learning VIM or EMACS will change your world.\n 10. All estimates are lies and 'good estimates' are bigger lies.\n 11. 80% of programmers are barely capable of doing their job.\n 12. Businesses exist to make money, not to make code.\n 13. Software exists to solve problems, it's not art.\n 14. Agile is a trap. You can't avoid it.\n 15. 80% of programmers never invest in improving their skills and never learn outside of work.\n 16. Your boss believes you are replaceable.\n 17. Work is a job, not a family, not a church, not a religion. You do it to get paid.\n 18. Company culture is often used as a trick to pay you less money.\n 19. The best programmers are always building things.\n 20. Your IDE doesn't matter.\n 21. The language you use doesn't matter.\n 22. The framework you use doesn't matter.\n 23. All technology arguments boil down to children fighting over which toy to play with.\n 24. You probably won't get rich by winning the startup lottery.\n 25. Make friends with QA testers, they will make your life better.\n 26. Always know how your business makes money, that determines who gets paid what.\n 27. If you want to feel important as a software developer, work at a tech company.\n 28. People will always prioritize new features over refactoring legacy code.\n 29. Sometimes a train wreck has to happen for anyone to care about the brakes.\n You are not your job.\n Hope this helps. ",
+        "user_id": 2
+    },
+    {
+        "title": "Is Python list an array?",
+        "content": "A Python list is stored as a contiguous area of memory (just like an array in C/C++) is - and therefore allows both sequential access (ie a for loop accessing the elements one after another) and direct access by use of a zero based index.\n Python lists though are also dynamic. They are resized as elements are added to them. They also have convenience functions to append, pretend, insert and remove items from the list, and these functions will move other elements around as required - pure arrays in C/C++ don’t provide those conveniences.\n Python lists are also heterogeneous- there is no restrictions as to the elements that can be contained in any given list - and Python lists are able to store multiple data types in the same list; pure arrays in C/C++ are homogenous - they can only store the data type they are declared for.\n Python lists are c/c++ arrays but on steroids - dynamically sized, heterogenous, and lots of convenience functionality\n ",
+        "user_id": 2
+    },
+    {
+        "title": "Is Python really better than MATLAB for AI?",
+        "content": "I would like to say Python is better than MATLAB for artificial intelligence. The reason is Python is having some of the most powerful libraries that are quite helpful in artificial intelligence.\n ",
+        "user_id": 2
+    },
+    {
+        "title": "How should I start learning NumPy?",
+        "content": "In order to start learning NumPy , you should be familiar with Arrays and array related Operations like indexing. It'll be benificial to you if you go through basics of Matrix before learning NumPy.\n Matrix addition , Matrix multiplication , Array indexing , Loading data in numpy are some of the basic steps to learn Numpy.\n Once you are done with these basics you can go for array comparisons, Logical Operations, Shape and Statistical functions like mean , median and standard deviation.\n After completing this stuff , you're free to learn advance concepts like Flattening , Reshaping , Shuffling.\n ",
+        "user_id": 2
+    }
+
+]
